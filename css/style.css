@@ -1,4 +1,4 @@
-  <style>
+  
     :root {
       --primary-color: #4361ee;
       --secondary-color: #3a0ca3;
@@ -611,4 +611,4 @@
     .toast.error {
       border-left: 5px solid var(--danger-color);
     }
-  </style>
+  
