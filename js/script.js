@@ -1,4 +1,4 @@
- <script>
+ 
     // Task Manager
     class TaskManager {
       constructor() {
@@ -350,4 +350,4 @@
         }, index * 200);
       });
     }
-  </script>
+  
