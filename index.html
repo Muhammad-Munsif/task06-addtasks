@@ -1,101 +1,107 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Add Task To localStorage</title>
-    <link rel="stylesheet" href="css/style.css" />
-    <style>
-      body {
-  font-family: Arial, sans-serif;
-  max-width: 400px;
-  margin: auto;
-}
-#taskList {
-  list-style: none;
-  padding: 0;
-  margin-top: 15px;
-}
-li {
-  padding: 10px;
-  margin-bottom: 5px;
-  background: #f0f0f0;
-  border-radius: 4px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-.delete-btn {
-  background: red;
-  color: white;
-  border: none;
-  padding: 4px 8px;
-  border-radius: 4px;
-  cursor: pointer;
-}
-.done {
-  text-decoration: line-through;
-  color: gray;
-}
 
-.task-input-wrapper {
-  display: flex;
-  gap: 10px;
-  margin-bottom: 20px;
-}
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Add Task To localStorage</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      max-width: 400px;
+      margin: auto;
+    }
 
-#taskInput {
-  flex: 1;
-  padding: 12px;
-  border: 2px solid #ddd;
-  border-radius: 8px;
-  font-size: 16px;
-  transition: border 0.3s, box-shadow 0.3s;
-}
+    #taskList {
+      list-style: none;
+      padding: 0;
+      margin-top: 15px;
+    }
 
-#taskInput:focus {
-  border-color: #007bff;
-  outline: none;
-  box-shadow: 0 0 5px rgba(0, 123, 255, 0.3);
-}
+    li {
+      padding: 10px;
+      margin-bottom: 5px;
+      background: #f0f0f0;
+      border-radius: 4px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
 
-#addTaskBtn {
-  padding: 12px 20px;
-  background-color: #007bff;
-  color: white;
-  border: none;
-  border-radius: 8px;
-  font-size: 16px;
-  cursor: pointer;
-  transition: background-color 0.3s, transform 0.2s;
-}
+    .delete-btn {
+      background: red;
+      color: white;
+      border: none;
+      padding: 4px 8px;
+      border-radius: 4px;
+      cursor: pointer;
+    }
 
-#addTaskBtn:hover {
-  background-color: #0056b3;
-  transform: translateY(-2px);
-}
+    .done {
+      text-decoration: line-through;
+      color: gray;
+    }
 
-@media (max-width: 480px) {
-  .task-input-wrapper {
-    flex-direction: column;
-  }
+    .task-input-wrapper {
+      display: flex;
+      gap: 10px;
+      margin-bottom: 20px;
+    }
 
-  #addTaskBtn {
-    width: 100%;
-  }
-}
+    #taskInput {
+      flex: 1;
+      padding: 12px;
+      border: 2px solid #ddd;
+      border-radius: 8px;
+      font-size: 16px;
+      transition: border 0.3s, box-shadow 0.3s;
+    }
 
-    </style>
-  </head>
-  <body>
-    <h2>Task List</h2>
-    <div class="task-input-wrapper">
-      <input type="text" id="taskInput" placeholder="Enter a task" required />
-      <button id="addTaskBtn">Add Task</button>
-    </div>
+    #taskInput:focus {
+      border-color: #007bff;
+      outline: none;
+      box-shadow: 0 0 5px rgba(0, 123, 255, 0.3);
+    }
 
-    <ul id="taskList"></ul>
+    #addTaskBtn {
+      padding: 12px 20px;
+      background-color: #007bff;
+      color: white;
+      border: none;
+      border-radius: 8px;
+      font-size: 16px;
+      cursor: pointer;
+      transition: background-color 0.3s, transform 0.2s;
+    }
 
-    <script src="js/script.js"></script>
-  </body>
+    #addTaskBtn:hover {
+      background-color: #0056b3;
+      transform: translateY(-2px);
+    }
+
+    @media (max-width: 480px) {
+      .task-input-wrapper {
+        flex-direction: column;
+      }
+
+      #addTaskBtn {
+        width: 100%;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <h2>Task List</h2>
+  <div class="task-input-wrapper">
+    <input type="text" id="taskInput" placeholder="Enter a task" required />
+    <button id="addTaskBtn">Add Task</button>
+  </div>
+
+  <ul id="taskList"></ul>
+
+  <script src="js/script.js"></script>
+</body>
+
 </html>
